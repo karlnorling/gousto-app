@@ -1,4 +1,4 @@
-# Requirments
+# Requirements
 
 ## Backend API Technical Challenge
 We'd like to get to know you better, so we've prepared a technical task that will tell us more about you. You can find more information about it below.
