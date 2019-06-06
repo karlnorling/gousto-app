@@ -1,3 +1,5 @@
 import { recipesRoutes } from './recipes'
+import { cuisinesRoutes } from './cuisines'
 
-export const getRoutes = (router) => recipesRoutes(router);
+// Not pretty - need better way to combine routes.
+export const getRoutes = (router) => cuisinesRoutes(recipesRoutes(router));

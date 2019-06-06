@@ -1,4 +1,9 @@
 export namespace Gousto {
+  export interface Cuisine {
+      name: string;
+      recipes: Recipe[];
+  }
+
   export interface Recipe {
     id: number;
     meta: Meta;
