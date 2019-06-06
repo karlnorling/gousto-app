@@ -8,10 +8,11 @@ import { routes } from './routes/index';
 import { loadData } from './service/loadData';
 
 const app = new Koa();
-const port = 3003;
+const port = 3003; // Move to .env.local
+const csvFilePath = './src/data/recipe-data.csv'; // Move to .env.local
 
 const startAndLoad = async () => {
-  const recipes: Gousto.Recipe[] | void[] = await loadData();
+  const recipes: Gousto.Recipe[] | void[] = await loadData(csvFilePath);
 
   // Provides important security headers to make your app more secure
   app.use(helmet());

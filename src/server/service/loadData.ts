@@ -1,8 +1,7 @@
 import * as csv from 'csvtojson';
-const csvFilePath = './src/data/recipe-data.csv';
 import { Gousto } from '../../types/globals';
 
-export const loadData = async (): Promise<Gousto.Recipe[] | void[]> => {
+export const loadData = async (csvFilePath: string): Promise<Gousto.Recipe[] | void[]> => {
   console.log(`Attempting to load data from: ${csvFilePath}`);
   try {
     const json = await csv().fromFile(csvFilePath);
