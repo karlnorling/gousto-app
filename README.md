@@ -140,7 +140,7 @@ GET /cuisines/:type - get cuisine based on cuisine type
 
 ## How to use
 To run and start the app please run the following commands in the terminal.
-This app requires that you have `node 11` or higher and `npm 6` or higher.
+This app requires that you have `node 11` or higher and `npm 6` or higher installed.
 
 To install required npm packages:
 ```
@@ -152,10 +152,20 @@ npm start
 ```
 ### Visit the app in the browser
 
-#### Use case one:
+#### Use Case 1
 http://localhost:3003/recipes
+
 http://localhost:3003/recipes/1
 
-#### Use case two:
+#### Use Case 2:
 http://localhost:3003/cuisines
+
 http://localhost:3003/cuisines/british
+
+## Possible improvements
+There are a number of improvements that are feasable.
+  - API authentication via token
+  - Rate limiting
+  - Logging in JSON format to be ingested in elasticsearch
+    - Create json-log codec for text logging
+    - Create json-metric codec for metric logging
