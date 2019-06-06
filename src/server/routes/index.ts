@@ -1,5 +1,3 @@
-import { recipes } from './recipes'
+import { recipesRoutes } from './recipes'
 
-export const routes = {
-  recipes
-};
+export const getRoutes = (router) => recipesRoutes(router);

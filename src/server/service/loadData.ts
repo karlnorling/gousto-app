@@ -6,10 +6,10 @@ export const loadData = async (csvFilePath: string): Promise<Gousto.Recipe[] | v
   try {
     const json = await csv().fromFile(csvFilePath);
     if (json && json.length > 0) {
-      console.log(`Data loaded: ${JSON.stringify(json)}`);
+      console.log(`Data loaded`);
       return json.map((data: any) => {
         const recipe: Gousto.Recipe = {
-          id: data.id,
+          id: parseInt(data.id, 10),
           meta: {
             createdAt: data.created_at,
             updatedAt: data.updated_at,

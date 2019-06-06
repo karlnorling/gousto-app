@@ -1,6 +1,6 @@
 export namespace Gousto {
   export interface Recipe {
-    id: string;
+    id: number;
     meta: Meta;
     boxType: string;
     title: string;

@@ -6,7 +6,7 @@
   "dependencies": {
     "csvtojson": "^2.0.8",
     "koa": "^2.7.0",
-    "koa-bodyparser": "^2.5.0",
+    "koa-body": "^4.1.0",
     "koa-helmet": "^4.2.0",
     "koa-router": "^7.4.0",
     "nodemon": "^1.19.1",
