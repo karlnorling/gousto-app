@@ -9,7 +9,7 @@ export default class RecipesController {
   }
 
   public static async get (ctx: BaseContext) {
-    const recipe = ctx.data.recipes.find((recipe: Gousto.Recipe) => recipe.id === parseInt(ctx.params.id, 10));
+    const recipe: Gousto.Recipe = ctx.data.recipes.find((recipe: Gousto.Recipe) => recipe.id === parseInt(ctx.params.id, 10));
     if (recipe) {
       ctx.body = {
         ...recipe
@@ -20,7 +20,7 @@ export default class RecipesController {
   }
 
   public static async put (ctx: BaseContext) {
-    const recipe = ctx.data.recipes.find((recipe: Gousto.Recipe) => recipe.id === parseInt(ctx.params.id, 10));
+    const recipe: Gousto.Recipe = ctx.data.recipes.find((recipe: Gousto.Recipe) => recipe.id === parseInt(ctx.params.id, 10));
     if (recipe) {
       // Get post body
       // Match with Gousto.Recipe properties and update

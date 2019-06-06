@@ -1,17 +1,20 @@
 export namespace Gousto {
   export interface Cuisine {
       name: string;
-      recipes: Recipe[];
+      recipes: BaseRecipe[];
   }
 
-  export interface Recipe {
+  export interface BaseRecipe {
     id: number;
+    title: string;
+    marketingDescription: string;
+  }
+
+  export interface Recipe extends BaseRecipe {
     meta: Meta;
     boxType: string;
-    title: string;
     slug: string;
     shortTitle: string;
-    marketingDescription: string;
     bullets: string[];
     recipeDietType: string;
     season: string;
