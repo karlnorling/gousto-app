@@ -124,3 +124,15 @@ This model will be used in the response from the API.
 
 ## REST API
 To satisfy the requirements for the API we need a couple of endpoints.
+
+Recipes
+```
+/recipes - list all recipes
+/recipes/:id - get recipe based on recipe id
+```
+
+Cuisines
+```
+/cuisines - list all types of cuisines
+/cuisines/:type - get cuisine based on cuisine type
+```
