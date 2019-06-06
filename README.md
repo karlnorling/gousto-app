@@ -127,12 +127,35 @@ To satisfy the requirements for the API we need a couple of endpoints.
 
 Recipes
 ```
-/recipes - list all recipes
-/recipes/:id - get recipe based on recipe id
+GET /recipes - list all recipes
+GET /recipes/:id - get recipe based on recipe id
+PUT /recipes/:id - update recipe based on recipe id with request data
 ```
 
 Cuisines
 ```
-/cuisines - list all types of cuisines
-/cuisines/:type - get cuisine based on cuisine type
+GET /cuisines - list all types of cuisines
+GET /cuisines/:type - get cuisine based on cuisine type
 ```
+
+## How to use
+To run and start the app please run the following commands in the terminal.
+This app requires that you have `node 11` or higher and `npm 6` or higher.
+
+To install required npm packages:
+```
+npm install
+```
+To run the app
+```
+npm start
+```
+### Visit the app in the browser
+
+#### Use case one:
+http://localhost:3003/recipes
+http://localhost:3003/recipes/1
+
+#### Use case two:
+http://localhost:3003/cuisines
+http://localhost:3003/cuisines/british
