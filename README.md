@@ -164,6 +164,9 @@ http://localhost:3003/cuisines/british
 
 ## Possible improvements
 There are a number of improvements that are feasable.
+  - try catch in controllers with proper error code coming back
+    - 5xx for server error
+    - 4xx for bad requests - validate request data
   - API authentication via token
   - Rate limiting
   - Logging in JSON format to be ingested in elasticsearch

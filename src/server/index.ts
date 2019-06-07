@@ -6,10 +6,8 @@ import * as Router from 'koa-router';
 
 import { Gousto } from '../types/globals';
 
-//import { router } from './routes/index';
 import { loadData } from './service/loadData';
 import { getRoutes } from './routes/index';
-import { runInNewContext } from 'vm';
 
 const app = new Koa();
 const router = new Router();
