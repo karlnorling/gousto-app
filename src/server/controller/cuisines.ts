@@ -29,7 +29,7 @@ export default class CuisinesController {
         return {
           id: recipe.id,
           title: recipe.title,
-          marketingDescription: recipe.marketingDescription,
+          marketingDescription: recipe.marketingDescription
         }
       });
       const cuisines: Gousto.Cuisine = {
