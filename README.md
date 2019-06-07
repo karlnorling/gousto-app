@@ -6,7 +6,7 @@ We'd like to get to know you better, so we've prepared a technical task that wil
 If you have any questions or you don't fully understand something, do not hesitate to ask us for clarification. Also, we are always looking to improve our technical test so feel free to send us any feedback on the exercise.
 
 ## Scenario
-Gousto’s technical infrastructure includes an API Gateway that offers a number of operations related to recipes. The recipes are very detailed, containing information such as cuisine, customer ratings & comments, stock levels and diet types.
+Gousto's technical infrastructure includes an API Gateway that offers a number of operations related to recipes. The recipes are very detailed, containing information such as cuisine, customer ratings & comments, stock levels and diet types.
 
 Your task is to design, develop and deliver to us your version of a set of recipe operations. The solution should meet our functional and nonfunctional requirements below.
 

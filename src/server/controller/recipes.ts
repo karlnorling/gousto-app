@@ -1,10 +1,21 @@
 import { BaseContext } from 'koa';
 import { Gousto } from 'src/types/globals';
+import { Paginate } from './util/pagination';
+
+const pageSize = 5;
+const maxPages = 10;
 
 export default class RecipesController {
   public static async list (ctx: BaseContext) {
+    const currentPage = ctx.params.page || 1;
+    const totalItems = ctx.data.recipes.length;
+    const pagination = new Paginate(totalItems, pageSize, maxPages);
+    const chunk = pagination.getChunk(ctx.data.recipes, currentPage);
+    const pages = pagination.getPagination(currentPage);
+
     ctx.body = {
-      ...ctx.data
+      recipes: chunk,
+      pages
     }
   }
 

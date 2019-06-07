@@ -31,6 +31,7 @@ const startAndLoad = async () => {
   // Enable bodyParser with default options
   app.use(bodyParser());
 
+  // Set data on context
   app.use(async (ctx, next) => {
     ctx.data = {
       recipes
